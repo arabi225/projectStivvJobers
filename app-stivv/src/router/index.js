@@ -4,7 +4,8 @@ import * as pathPublic from '@/views/public/path'
 
 import * as pathAdmin from '@/views/admin/path'
 
- 
+import Login from '@/views/auth/Login.vue'
+import Inscription from '@/views/auth/Inscription.vue'
 
 
 const routes = [
@@ -33,6 +34,10 @@ const routes = [
       {path: 'JobbersRep/ListOffreEmp', name: 'ListOffreEmp', component: pathAdmin.ListOffreEmp},
       
     ]
+  },
+  {
+    path: '/Login', name: 'Login', component: Login,
+    path: '/Inscription', name: 'Inscription', component: Inscription
   },
   {
     path: '/:pathMatch(.*)*',redirect: '/'

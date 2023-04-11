@@ -1,17 +1,15 @@
 <template>
     <div class="connexion">
         page Connexion
-        <Connect/>
+        
     </div>
     
 </template>
 
 <script>
-import Connect from '@/components/Connect.vue';
+//import Connect from '@/views/auth/Login.vue';
 export default {
     name: 'Connexion',
-    components:{
-        Connect
-    }
+    
 }
 </script>
